@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright (C) 2012 Akretion (http://www.akretion.com/)
+    @author Alexis de Lattre <alexis.delattre@akretion.com>
+    The licence is in the file __openerp__.py
+-->
+
+<openerp>
+<data>
+
+<record id="group_account_invoice_viewer" model="res.groups">
+    <field name="name">Invoicing &amp; Payments Viewer</field>
+    <field name="category_id" ref="base.module_category_accounting_and_finance"/>
+</record>
+
+<record id="account.group_account_invoice" model="res.groups">
+    <field name="implied_ids" eval="[(4, ref('group_account_invoice_viewer'))]"/>
+</record>
+
+<!-- Add access on top-level Accounting menu -->
+<record id="account.menu_finance" model="ir.ui.menu">
+    <field name="groups_id" eval="[(4, ref('group_account_invoice_viewer'))]"/>
+</record>
+
+</data>
+</openerp>

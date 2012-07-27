@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_order_viewer,Read-only access to purchase.order,purchase.model_purchase_order,group_purchase_viewer,1,0,0,0
+access_purchase_order_line_viewer,Read-only access to purchase.order.line,purchase.model_purchase_order_line,group_purchase_viewer,1,0,0,0
+access_purchase_report_viewer,Read-only access to purchase.report,purchase.model_purchase_report,group_purchase_viewer,1,0,0,0
+access_account_invoice_viewer,Read-only access to account.invoice,account.model_account_invoice,group_purchase_viewer,1,0,0,0
+access_stock_move_viewer,Read-only access to stock.move,stock.model_stock_move,group_purchase_viewer,1,0,0,0
+access_stock_warehouse_orderpoint_viewer,Read-only access to stock.warehouse.orderpoint,procurement.model_stock_warehouse_orderpoint,group_purchase_viewer,1,0,0,0
