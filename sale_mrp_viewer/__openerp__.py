@@ -24,7 +24,7 @@
 {
     'name': 'Sale MRP viewer',
     'version': '1.0',
-    'category': 'Hidden',
+    'category': 'Manufacturing',
     'license': 'AGPL-3',
     'description': """This module adds the required read-only Access Control Lists (ACLs) to the group 'MRP viewer' when the 'sale_mrp' module is installed.
 
