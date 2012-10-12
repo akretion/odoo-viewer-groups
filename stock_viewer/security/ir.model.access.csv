@@ -10,3 +10,5 @@ access_report_stock_lines_date_viewer,Read-only access to report.stock.lines.dat
 access_stock_report_tracklots_viewer,Read-only access to stock.report.tracklots,stock.model_stock_report_tracklots,group_stock_viewer,1,0,0,0
 access_report_stock_move_viewer,Read-only access to report.stock.move,stock.model_report_stock_move,group_stock_viewer,1,0,0,0
 access_report_stock_inventory_viewer,Read-only access to report.stock.inventory,stock.model_report_stock_inventory,group_stock_viewer,1,0,0,0
+access_report_prodlots_viewer,Read-only access to stock.report.prodlots,stock.model_stock_report_prodlots,group_stock_viewer,1,0,0,0
+access_report_tracklots_viewer,Read-only access to stock.report.tracklots,stock.model_stock_report_tracklots,group_stock_viewer,1,0,0,0
