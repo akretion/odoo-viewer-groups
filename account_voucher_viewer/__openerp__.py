@@ -23,6 +23,7 @@
 
 {
     'name': 'Account voucher viewer',
+    'summary': """Extends the group 'Invoice & Payment viewer' to Vouchers""",
     'version': '1.0',
     'category': 'Accounting & Finance',
     'license': 'AGPL-3',
@@ -33,11 +34,9 @@ Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for
     'author': 'Akretion',
     'website': 'http://www.akretion.com',
     'depends': ['account_voucher', 'account_viewer'],
-    'init_xml': [],
-    'update_xml': [
+    'data': [
         'security/ir.model.access.csv',
     ],
-    'demo_xml': [],
     'installable': True,
     'active': False,
 }

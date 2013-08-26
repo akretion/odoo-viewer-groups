@@ -23,22 +23,21 @@
 
 {
     'name': 'Account viewer',
+    'summary': """Adds a group 'Invoice & Payment viewer'""",
     'version': '1.0',
     'category': 'Accounting & Finance',
     'license': 'AGPL-3',
-    'description': """This module adds a group 'Invoice & Payment viewer' which grants read-only access to invoices, refunds and payments. If you add a user to this new group, he should also be in the group 'Human Ressources - Employee'.
+    'description': """This module adds a group 'Invoice & Payment viewer' in the 'Accounting & Finance' application. This group grants read-only access to invoices, refunds and payments. If you add a user to this new group, he should also be in the group 'Human Ressources - Employee'.
 
 Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for any help or question about this module.
     """,
     'author': 'Akretion',
     'website': 'http://www.akretion.com',
     'depends': ['account'],
-    'init_xml': [],
-    'update_xml': [
+    'data': [
         'security/account_security.xml',
         'security/ir.model.access.csv',
     ],
-    'demo_xml': [],
     'installable': True,
     'active': False,
 }

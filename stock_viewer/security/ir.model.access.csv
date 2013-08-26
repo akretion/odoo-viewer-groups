@@ -1,5 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_stock_picking_viewer,Read-only access to stock.picking,stock.model_stock_picking,group_stock_viewer,1,0,0,0
+access_stock_picking_in_viewer,Read-only access to stock.picking.in,stock.model_stock_picking_in,group_stock_viewer,1,0,0,0
+access_stock_picking_out_viewer,Read-only access to stock.picking.out,stock.model_stock_picking_out,group_stock_viewer,1,0,0,0
 access_stock_move_viewer,Read-only access to stock.move,stock.model_stock_move,group_stock_viewer,1,0,0,0
 access_stock_tracking_viewer,Read-only access to stock.tracking,stock.model_stock_tracking,group_stock_viewer,1,0,0,0
 access_stock_production_lot_viewer,Read-only access to stock.production.lot,stock.model_stock_production_lot,group_stock_viewer,1,0,0,0

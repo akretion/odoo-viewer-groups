@@ -23,6 +23,7 @@
 
 {
     'name': 'Sale MRP viewer',
+    'summary': """Extends the group 'MRP viewer' to the 'sale_mrp' module""",
     'version': '1.0',
     'category': 'Manufacturing',
     'license': 'AGPL-3',
@@ -33,11 +34,9 @@ Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for
     'author': 'Akretion',
     'website': 'http://www.akretion.com',
     'depends': ['sale_mrp', 'mrp_viewer'],
-    'init_xml': [],
-    'update_xml': [
+    'data': [
         'security/ir.model.access.csv',
     ],
-    'demo_xml': [],
     'installable': True,
     'active': False,
 }

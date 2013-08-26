@@ -3,7 +3,6 @@ access_mrp_workcenter_viewer,Read-only access to mrp.workcenter,mrp.model_mrp_wo
 access_mrp_routing_viewer,Read-only access to mrp.routing,mrp.model_mrp_routing,group_mrp_viewer,1,0,0,0
 access_mrp_routing_workcenter_viewer,Read-only access to mrp.routing.workcenter,mrp.model_mrp_routing_workcenter,group_mrp_viewer,1,0,0,0
 access_mrp_bom_viewer,Read-only access to mrp.bom,mrp.model_mrp_bom,group_mrp_viewer,1,0,0,0
-access_mrp_bom_revision_viewer,Read-only access to mrp.bom.revision,mrp.model_mrp_bom_revision,group_mrp_viewer,1,0,0,0
 access_mrp_production_viewer,Read-only access to mrp.production,mrp.model_mrp_production,group_mrp_viewer,1,0,0,0
 access_mrp_production_product_line_viewer,Read-only access to mrp.production.product.line,mrp.model_mrp_production_product_line,group_mrp_viewer,1,0,0,0
 access_mrp_production_workcenter_line_viewer,Read-only access to mrp.production.workcenter.line,mrp.model_mrp_production_workcenter_line,group_mrp_viewer,1,0,0,0

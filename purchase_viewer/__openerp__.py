@@ -23,22 +23,21 @@
 
 {
     'name': 'Purchase viewer',
+    'summary': """Adds a group 'Purchase viewer'""",
     'version': '1.0',
     'category': 'Purchase Management',
     'license': 'AGPL-3',
-    'description': """This module adds a group 'Purchase viewer' which grants read-only access to the Purchase Management. If you add a user to this new group, he should also be in the group 'Human Ressources - Employee'.
+    'description': """This module adds a group 'Purchase viewer' in the 'Purchases' application. This group grants read-only access to the Purchase Management. If you add a user to this new group, he should also be in the group 'Human Ressources - Employee'.
 
 Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for any help or question about this module.
     """,
     'author': 'Akretion',
     'website': 'http://www.akretion.com',
     'depends': ['purchase'],
-    'init_xml': [],
-    'update_xml': [
+    'data': [
         'security/purchase_security.xml',
         'security/ir.model.access.csv',
     ],
-    'demo_xml': [],
     'installable': True,
     'active': False,
 }

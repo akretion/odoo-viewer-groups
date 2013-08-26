@@ -23,22 +23,21 @@
 
 {
     'name': 'MRP viewer',
+    'summary': """Adds a group 'Manufacturing viewer'""",
     'version': '1.0',
     'category': 'Manufacturing',
     'license': 'AGPL-3',
-    'description': """This module adds a group 'Manufacturing viewer' which grants read-only access to the Manufacturing management. If you add a user to this new group, he should also be in the group 'Human Ressources - Employee'.
+    'description': """This module adds a group 'Manufacturing viewer' to the 'Manufacturing' application. This group grants read-only access to the Manufacturing management. If you add a user to this new group, he should also be in the group 'Human Ressources - Employee'.
 
 Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for any help or question about this module.
     """,
     'author': 'Akretion',
     'website': 'http://www.akretion.com',
     'depends': ['mrp'],
-    'init_xml': [],
-    'update_xml': [
+    'data': [
         'security/mrp_security.xml',
         'security/ir.model.access.csv',
     ],
-    'demo_xml': [],
     'installable': True,
     'active': False,
 }
