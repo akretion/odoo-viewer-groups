@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    Project viewer module for OpenERP
-#    Copyright (C) 2013 Akretion (http://www.akretion.com)
+#    Copyright (C) 2013-2014 Akretion (http://www.akretion.com)
 #    @author Alexis de Lattre <alexis.delattre@akretion.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -27,7 +27,11 @@
     'version': '1.0',
     'category': 'Project Management',
     'license': 'AGPL-3',
-    'description': """This module adds a group 'Project Viewer' in the 'Project' application. This group grants read-only access to the Project management. If you add a user to this new group, he should also be in the group 'Human Ressources - Employee'.
+    'description': """
+Project Viewer
+==============
+
+This module adds a group *Project Viewer* in the *Project* application. This group grants read-only access to the Project management. If you add a user to this new group, he should also be in the group *Human Ressources - Employee*.
 
 Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for any help or question about this module.
     """,

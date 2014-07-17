@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    Stock viewer module for OpenERP
-#    Copyright (C) 2012 Akretion (http://www.akretion.com). All Rights Reserved
+#    Copyright (C) 2012-2014 Akretion (http://www.akretion.com)
 #    @author Alexis de Lattre <alexis.delattre@akretion.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -22,12 +22,16 @@
 
 
 {
-    'name': 'Stock viewer',
+    'name': 'Stock Viewer',
     'summary': """Adds a group 'Stock viewer'""",
     'version': '1.0',
     'category': 'Warehouse Management',
     'license': 'AGPL-3',
-    'description': """This module adds a group 'Stock viewer' in the 'Warehouse' application. This group grants read-only access to the Warehouse management. If you add a user to this new group, he should also be in the group 'Human Ressources - Employee'.
+    'description': """
+Stock Viewer
+============
+
+This module adds a group *Stock viewer* in the *Warehouse* application. This group grants read-only access to the Warehouse management. If you add a user to this new group, he should also be in the group *Human Ressources - Employee*.
 
 Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for any help or question about this module.
     """,

@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stock_picking_viewer,Read-only access to stock.picking,stock.model_stock_picking,sale_viewer.group_sale_viewer,1,0,0,0
+access_stock_move_viewer,Read-only access to stock.move,stock.model_stock_move,sale_viewer.group_sale_viewer,1,0,0,0
+access_procurement_order_viewer,Read-only access to procurement.order,procurement.model_procurement_order,sale_viewer.group_sale_viewer,1,0,0,0
+access_stock_warehouse_orderpoint_viewer,Read-only access to stock.warehouse.orderpoint,stock.model_stock_warehouse_orderpoint,sale_viewer.group_sale_viewer,1,0,0,0
+

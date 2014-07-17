@@ -3,20 +3,17 @@ access_mrp_workcenter_viewer,Read-only access to mrp.workcenter,mrp.model_mrp_wo
 access_mrp_routing_viewer,Read-only access to mrp.routing,mrp.model_mrp_routing,group_mrp_viewer,1,0,0,0
 access_mrp_routing_workcenter_viewer,Read-only access to mrp.routing.workcenter,mrp.model_mrp_routing_workcenter,group_mrp_viewer,1,0,0,0
 access_mrp_bom_viewer,Read-only access to mrp.bom,mrp.model_mrp_bom,group_mrp_viewer,1,0,0,0
+access_mrp_bom_line_viewer,Read-only access to mrp.bom.line,mrp.model_mrp_bom_line,group_mrp_viewer,1,0,0,0
 access_mrp_production_viewer,Read-only access to mrp.production,mrp.model_mrp_production,group_mrp_viewer,1,0,0,0
 access_mrp_production_product_line_viewer,Read-only access to mrp.production.product.line,mrp.model_mrp_production_product_line,group_mrp_viewer,1,0,0,0
 access_mrp_production_workcenter_line_viewer,Read-only access to mrp.production.workcenter.line,mrp.model_mrp_production_workcenter_line,group_mrp_viewer,1,0,0,0
 access_procurement_order_viewer,Read-only access to procurement.order,mrp.model_procurement_order,group_mrp_viewer,1,0,0,0
 access_stock_move_viewer,Read-only access to stock.move,stock.model_stock_move,group_mrp_viewer,1,0,0,0
 access_stock_picking_viewer,Read-only access to stock.picking,stock.model_stock_picking,group_mrp_viewer,1,0,0,0
-access_stock_tracking_viewer,Read-only access to stock.tracking,stock.model_stock_tracking,group_mrp_viewer,1,0,0,0
 access_stock_production_lot_viewer,Read-only access to stock.production.lot,stock.model_stock_production_lot,group_mrp_viewer,1,0,0,0
 access_resource_calendar_leaves_viewer,Read-only access to resource.calendar.leaves,resource.model_resource_calendar_leaves,group_mrp_viewer,1,0,0,0
 access_resource_resource_viewer,Read-only access to resource.resource,resource.model_resource_resource,group_mrp_viewer,1,0,0,0
 access_resource_calendar_viewer,Read-only access to resource.calendar,resource.model_resource_calendar,group_mrp_viewer,1,0,0,0
 access_report_mrp_inout_viewer,Read-only access to report.mrp.inout,mrp.model_report_mrp_inout,group_mrp_viewer,1,0,0,0
 access_report_workcenter_load_viewer,Read-only access to report.workcenter.load,mrp.model_report_workcenter_load,group_mrp_viewer,1,0,0,0
-access_stock_warehouse_orderpoint_viewer,Read-only access to stock.warehouse.orderpoint,procurement.model_stock_warehouse_orderpoint,group_mrp_viewer,1,0,0,0
-
-
-
+access_stock_warehouse_orderpoint_viewer,Read-only access to stock.warehouse.orderpoint,stock.model_stock_warehouse_orderpoint,group_mrp_viewer,1,0,0,0

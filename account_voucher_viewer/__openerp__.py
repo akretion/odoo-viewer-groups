@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    Account voucher viewer module for OpenERP
-#    Copyright (C) 2012 Akretion (http://www.akretion.com). All Rights Reserved
+#    Copyright (C) 2012-2014 Akretion (http://www.akretion.com)
 #    @author Alexis de Lattre <alexis.delattre@akretion.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -22,12 +22,16 @@
 
 
 {
-    'name': 'Account voucher viewer',
+    'name': 'Account Voucher Viewer',
     'summary': """Extends the group 'Invoice & Payment viewer' to Vouchers""",
     'version': '1.0',
     'category': 'Accounting & Finance',
     'license': 'AGPL-3',
-    'description': """This module adds the read-only Access Control Lists (ACLs) on the object account.voucher to the group 'Invoice & Payment viewer'.
+    'description': """
+Account Voucher Viewer
+======================
+
+This module adds the read-only Access Control Lists (ACLs) on the object account.voucher to the group *Invoice & Payment viewer*.
 
 Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for any help or question about this module.
     """,
@@ -37,6 +41,7 @@ Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for
     'data': [
         'security/ir.model.access.csv',
     ],
+    'auto_install': True,
     'installable': True,
     'active': False,
 }
