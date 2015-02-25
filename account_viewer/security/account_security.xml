@@ -35,7 +35,7 @@
 <record id="customer_account_invoice_viewer_rule" model="ir.rule">
     <field name="name">Customer-only Invoice viewer</field>
     <field name="model_id" ref="account.model_account_invoice"/>
-    <field name="global" eval="True"/>
+    <field name="groups" eval="[(4, ref('group_customer_account_invoice_viewer'))]"/>
     <field name="domain_force">[('type', 'in', ('out_invoice', 'out_refund'))]</field>
 </record>
 
