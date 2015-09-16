@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_stock_picking_viewer,Read-only access to stock.picking,stock.model_stock_picking,group_stock_viewer,1,0,0,0
+access_stock_move_viewer,Read-only access to stock.move,stock.model_stock_move,group_stock_viewer,1,0,0,0
+access_stock_production_lot_viewer,Read-only access to stock.production.lot,stock.model_stock_production_lot,group_stock_viewer,1,0,0,0
+access_stock_inventory_viewer,Read-only access to stock.inventory,stock.model_stock_inventory,group_stock_viewer,1,0,0,0
+access_stock_inventory_line_viewer,Read-only access to stock.inventory.line,stock.model_stock_inventory_line,group_stock_viewer,1,0,0,0
+access_report_stock_lines_date_viewer,Read-only access to report.stock.lines.date,stock.model_report_stock_lines_date,group_stock_viewer,1,0,0,0
+access_stock_warehouse_orderpoint_viewer,Read-only access to stock.warehouse.orderpoint,stock.model_stock_warehouse_orderpoint,group_stock_viewer,1,0,0,0
+access_stock_quant_viewer,Read-only access to stock.quant,stock.model_stock_quant,group_stock_viewer,1,0,0,0
+access_stock_quant_package_viewer,Read-only access to stock.quant.package,stock.model_stock_quant_package,group_stock_viewer,1,0,0,0
+access_procurement_rule_viewer,Read-only access to procurement.rule,stock.model_procurement_rule,group_stock_viewer,1,0,0,0
+access_stock_location_path_viewer,Read-only access to stock.location.path,stock.model_stock_location_path,group_stock_viewer,1,0,0,0
+access_stock_pack_operation_viewer,Read-only access to stock.pack.operation,stock.model_stock_pack_operation,group_stock_viewer,1,0,0,0
+access_stock_move_operation_link_viewer,Read-only access to stock.move.operation.link,stock.model_stock_move_operation_link,group_stock_viewer,1,0,0,0
+access_product_price_history_viewer,Read-only access to product.price.history,product.model_product_price_history,group_stock_viewer,1,0,0,0

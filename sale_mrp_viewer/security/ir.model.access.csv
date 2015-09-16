@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_order_line_viewer,Read-only access to sale.order.line,sale.model_sale_order_line,mrp_viewer.group_mrp_viewer,1,0,0,0
+access_sale_order_viewer,Read-only access to sale.order,sale.model_sale_order,mrp_viewer.group_mrp_viewer,1,0,0,0
+access_mrp_bom_viewer,Read-only access to mrp.bom,mrp.model_mrp_bom,sale_viewer.group_sale_viewer,1,0,0,0

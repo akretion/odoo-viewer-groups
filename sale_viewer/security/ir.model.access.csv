@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_order_viewer,Read-only access to sale.order,sale.model_sale_order,group_sale_viewer,1,0,0,0
+access_sale_order_line_viewer,Read-only access to sale.order.line,sale.model_sale_order_line,group_sale_viewer,1,0,0,0
+access_account_invoice_viewer,Read-only access to account.invoice,account.model_account_invoice,group_sale_viewer,1,0,0,0
+access_account_invoice_report_viewer,Read-only access to account.invoice.report,account.model_account_invoice_report,group_sale_viewer,1,0,0,0
+access_sale_report_viewer,Read-only access to sale.report,sale.model_sale_report,group_sale_viewer,1,0,0,0

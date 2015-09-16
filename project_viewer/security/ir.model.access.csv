@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_project_project_viewer,Read-only access to project.project,project.model_project_project,group_project_viewer,1,0,0,0
+access_account_analytic_account_viewer,Read-only access to account.analytic.account,analytic.model_account_analytic_account,group_project_viewer,1,0,0,0
+access_project_task_type_viewer,Read-only access to project.task.type,project.model_project_task_type,group_project_viewer,1,0,0,0
+access_project_task_viewer,Read-only access to project.task,project.model_project_task,group_project_viewer,1,0,0,0
+access_project_task_work_viewer,Read-only access to project.task.work,project.model_project_task_work,group_project_viewer,1,0,0,0
+access_project_task_history_viewer,Read-only access to project.task.history,project.model_project_task_history,group_project_viewer,1,0,0,0
+access_project_task_history_cumulative_viewer,Read-only access to project.task.history.cumulative,project.model_project_task_history_cumulative,group_project_viewer,1,0,0,0
+access_resource_calendar_viewer,Read-only access to resource.calendar,resource.model_resource_calendar,group_project_viewer,1,0,0,0
