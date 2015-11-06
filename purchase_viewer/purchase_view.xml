@@ -17,5 +17,13 @@
     <field name="groups_id" eval="[(4, ref('purchase_viewer.group_purchase_viewer'))]"/>
 </record>
 
+<record id="purchase.view_product_template_purchase_buttons_from" model="ir.ui.view">
+    <field name="groups_id" eval="[(4, ref('purchase_viewer.group_purchase_viewer'))]"/>
+</record>
+
+<record id="purchase.view_product_normal_purchase_buttons_from" model="ir.ui.view">
+    <field name="groups_id" eval="[(4, ref('purchase_viewer.group_purchase_viewer'))]"/>
+</record>
+
 </data>
 </openerp>
