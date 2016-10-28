@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
-    Copyright (C) 2012 Akretion (http://www.akretion.com/)
-    @author Alexis de Lattre <alexis.delattre@akretion.com>
-    The licence is in the file __openerp__.py
+  © 2012-2016 Akretion (http://www.akretion.com)
+  @author Alexis de Lattre <alexis.delattre@akretion.com>
+  License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 -->
 
-<openerp>
-<data>
+<odoo>
+
 
 <record id="group_sale_viewer" model="res.groups">
     <field name="name">Viewer</field>
     <field name="category_id" ref="base.module_category_sales_management"/>
 </record>
 
-<record id="base.group_sale_salesman" model="res.groups">
+<record id="sales_team.group_sale_salesman" model="res.groups">
     <field name="implied_ids" eval="[(4, ref('group_sale_viewer'))]"/>
 </record>
 
 <!-- Add access on top-level Sales menu -->
-<record id="base.menu_base_partner" model="ir.ui.menu">
+<record id="sales_team.menu_base_partner" model="ir.ui.menu">
     <field name="groups_id" eval="[(4, ref('group_sale_viewer'))]"/>
 </record>
 
@@ -29,5 +28,4 @@
 </record>
 
 
-</data>
-</openerp>
+</odoo>
