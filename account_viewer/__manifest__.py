@@ -24,6 +24,7 @@ Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for
     'data': [
         'security/account_security.xml',
         'security/ir.model.access.csv',
+        'views/product.xml',
     ],
     'installable': True,
 }

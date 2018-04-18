@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# © 2012-2016 Akretion (http://www.akretion.com)
+# Copyright 2012-2018 Akretion (http://www.akretion.com)
 # @author Alexis de Lattre <alexis.delattre@akretion.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
@@ -23,6 +23,8 @@ Please contact Alexis de Lattre from Akretion <alexis.delattre@akretion.com> for
     'data': [
         'security/purchase_security.xml',
         'security/ir.model.access.csv',
+        'views/partner.xml',
+        'views/product.xml',
     ],
     'installable': True,
 }

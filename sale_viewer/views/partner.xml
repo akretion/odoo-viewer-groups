@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2015-2018 Akretion (http://www.akretion.com/)
+  @author Alexis de Lattre <alexis.delattre@akretion.com>
+  License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+
+<odoo>
+
+
+<record id="sale.res_partner_view_buttons" model="ir.ui.view">
+    <field name="groups_id" eval="[(4, ref('sale_viewer.group_sale_viewer'))]"/>
+</record>
+
+<record id="sale.act_res_partner_2_sale_order" model="ir.actions.act_window">
+    <field name="groups_id" eval="[(4, ref('sale_viewer.group_sale_viewer'))]"/>
+</record>
+
+
+</odoo>
