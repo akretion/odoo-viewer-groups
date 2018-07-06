@@ -7,7 +7,7 @@
     'name': 'Sale Viewer',
     'summary': """Adds a group 'Sale viewer'""",
     'version': '10.0.1.0.0',
-    'category': 'Sales Management',
+    'category': 'Sales',
     'license': 'AGPL-3',
     'description': """
 Sale Viewer

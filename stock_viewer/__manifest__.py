@@ -7,7 +7,7 @@
     'name': 'Stock Viewer',
     'summary': """Adds a group 'Stock viewer'""",
     'version': '10.0.1.0.0',
-    'category': 'Warehouse Management',
+    'category': 'Warehouse',
     'license': 'AGPL-3',
     'description': """
 Stock Viewer

@@ -7,7 +7,7 @@
     'name': 'Purchase Viewer',
     'summary': """Adds a group 'Purchase viewer'""",
     'version': '10.0.1.0.0',
-    'category': 'Purchase Management',
+    'category': 'Purchases',
     'license': 'AGPL-3',
     'description': """
 Purchase Viewer
