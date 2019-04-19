@@ -2,6 +2,8 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_account_invoice_viewer,Read-only access to account.invoice,account.model_account_invoice,group_account_invoice_viewer,1,0,0,0
 access_account_invoice_line_viewer,Read-only access to account.invoice.line,account.model_account_invoice_line,group_account_invoice_viewer,1,0,0,0
 access_account_invoice_tax_line_viewer,Read-only access to account.invoice.tax,account.model_account_invoice_tax,group_account_invoice_viewer,1,0,0,0
+access_account_bank_statement_viewer,Read-only access to account.bank.statement,account.model_account_bank_statement,group_account_invoice_viewer,1,0,0,0
+access_account_bank_statement_line_viewer,Read-only access to account.bank.statement.line,account.model_account_bank_statement_line,group_account_invoice_viewer,1,0,0,0
 access_account_move_viewer,Read-only access to account.move,account.model_account_move,group_account_invoice_viewer,1,0,0,0
 access_account_move_line_viewer,Read-only access to account.move.line,account.model_account_move_line,group_account_invoice_viewer,1,0,0,0
 access_account_full_reconcile_viewer,Read-only access to account.full.reconcile,account.model_account_full_reconcile,group_account_invoice_viewer,1,0,0,0

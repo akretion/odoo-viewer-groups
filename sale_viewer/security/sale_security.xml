@@ -17,15 +17,5 @@
     <field name="implied_ids" eval="[(4, ref('group_sale_viewer'))]"/>
 </record>
 
-<!-- Add access on top-level Sales menu -->
-<record id="sales_team.menu_base_partner" model="ir.ui.menu">
-    <field name="groups_id" eval="[(4, ref('group_sale_viewer'))]"/>
-</record>
-
-<!-- Add access to "Sale orders" menu -->
-<record id="sale.menu_sale_order" model="ir.ui.menu">
-    <field name="groups_id" eval="[(4, ref('group_sale_viewer'))]"/>
-</record>
-
 
 </odoo>

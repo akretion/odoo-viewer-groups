@@ -12,6 +12,21 @@
     <field name="groups_id" eval="[(4, ref('sale_viewer.group_sale_viewer'))]"/>
 </record>
 
+<record id="res_partner_view_buttons" model="ir.ui.view">
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="sale.res_partner_view_buttons"/>
+    <field name="arch" type="xml">
+        <button name="%(sale.act_res_partner_2_sale_order)d" type="action" position="attributes">
+            <attribute name="groups">sales_team.group_sale_salesman,sale_viewer.group_sale_viewer</attribute>
+        </button>
+    </field>
+</record>
+
+<record id="sale.crm_lead_partner_kanban_view" model="ir.ui.view">
+    <field name="groups_id" eval="[(4, ref('sale_viewer.group_sale_viewer'))]"/>
+</record>
+
+
 <record id="sale.act_res_partner_2_sale_order" model="ir.actions.act_window">
     <field name="groups_id" eval="[(4, ref('sale_viewer.group_sale_viewer'))]"/>
 </record>

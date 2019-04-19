@@ -22,11 +22,6 @@
     <field name="implied_ids" eval="[(4, ref('group_account_invoice_viewer'))]"/>
 </record>
 
-<!-- Add access on top-level Accounting menu -->
-<record id="account.menu_finance" model="ir.ui.menu">
-    <field name="groups_id" eval="[(4, ref('group_account_invoice_viewer'))]"/>
-</record>
-
 </data>
 
 <data noupdate="1">

@@ -1,5 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_mrp_workcenter_productivity_loss_viewer,Read-only access to mrp.workcenter.productivity.loss,mrp.model_mrp_workcenter_productivity_loss,group_mrp_viewer,1,0,0,0
+access_mrp_workcenter_productivity_loss_type_viewer,Read-only access to mrp.workcenter.productivity.loss.type,mrp.model_mrp_workcenter_productivity_loss_type,group_mrp_viewer,1,0,0,0
 access_mrp_workcenter_productivity_viewer,Read-only access to mrp.workcenter.productivity,mrp.model_mrp_workcenter_productivity,group_mrp_viewer,1,0,0,0
 access_mrp_workcenter_viewer,Read-only access to mrp.workcenter,mrp.model_mrp_workcenter,group_mrp_viewer,1,0,0,0
 access_mrp_routing_viewer,Read-only access to mrp.routing,mrp.model_mrp_routing,group_mrp_viewer,1,0,0,0
@@ -7,8 +8,8 @@ access_mrp_routing_workcenter_viewer,Read-only access to mrp.routing.workcenter,
 access_mrp_bom_viewer,Read-only access to mrp.bom,mrp.model_mrp_bom,group_mrp_viewer,1,0,0,0
 access_mrp_bom_line_viewer,Read-only access to mrp.bom.line,mrp.model_mrp_bom_line,group_mrp_viewer,1,0,0,0
 access_mrp_production_viewer,Read-only access to mrp.production,mrp.model_mrp_production,group_mrp_viewer,1,0,0,0
-access_procurement_order_viewer,Read-only access to procurement.order,mrp.model_procurement_order,group_mrp_viewer,1,0,0,0
 access_stock_move_viewer,Read-only access to stock.move,stock.model_stock_move,group_mrp_viewer,1,0,0,0
+access_stock_move_line_viewer,Read-only access to stock.move.line,stock.model_stock_move_line,group_mrp_viewer,1,0,0,0
 access_stock_picking_viewer,Read-only access to stock.picking,stock.model_stock_picking,group_mrp_viewer,1,0,0,0
 access_stock_production_lot_viewer,Read-only access to stock.production.lot,stock.model_stock_production_lot,group_mrp_viewer,1,0,0,0
 access_resource_calendar_leaves_viewer,Read-only access to resource.calendar.leaves,resource.model_resource_calendar_leaves,group_mrp_viewer,1,0,0,0
@@ -19,6 +20,5 @@ access_stock_warehouse_orderpoint_viewer,Read-only access to stock.warehouse.ord
 access_stock_warehouse_viewer,Read-only access to stock.warehouse,stock.model_stock_warehouse,group_mrp_viewer,1,0,0,0
 access_mrp_workorder_viewer,Read-only access to mrp.workorder,mrp.model_mrp_workorder,group_mrp_viewer,1,0,0,0
 access_mrp_unbuild_viewer,Read-only access to mrp.unbuild,mrp.model_mrp_unbuild,group_mrp_viewer,1,0,0,0
-access_mrp_message_viewer,Read-only access to mrp.message,mrp.model_mrp_message,group_mrp_viewer,1,0,0,0
-access_stock_move_lots_viewer,Read-only access to stock.move.lots,mrp.model_stock_move_lots,group_mrp_viewer,1,0,0,0
+access_mrp_document_viewer,Read-only access to mrp.document,mrp.model_mrp_document,group_mrp_viewer,1,0,0,0
 access_stock_scrap_viewer,Read-only access to stock.scrap,stock.model_stock_scrap,group_mrp_viewer,1,0,0,0

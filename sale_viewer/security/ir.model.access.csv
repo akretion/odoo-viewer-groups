@@ -4,3 +4,4 @@ access_sale_order_line_viewer,Read-only access to sale.order.line,sale.model_sal
 access_account_invoice_viewer,Read-only access to account.invoice,account.model_account_invoice,group_sale_viewer,1,0,0,0
 access_account_invoice_report_viewer,Read-only access to account.invoice.report,account.model_account_invoice_report,group_sale_viewer,1,0,0,0
 access_sale_report_viewer,Read-only access to sale.report,sale.model_sale_report,group_sale_viewer,1,0,0,0
+access_product_product_attribute_custom_value_viewer,Read-only access to product.attribute.custom.value,sale.model_product_attribute_custom_value,group_sale_viewer,1,0,0,0
