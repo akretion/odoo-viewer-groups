@@ -27,6 +27,10 @@
     </field>
 </record>
 
+<record id="stock.product_form_view_procurement_button" model="ir.ui.view">
+    <field name="groups_id" eval="[(4, ref('group_stock_viewer'))]"/>
+</record>
+
 <record id="product_form_view_procurement_button" model="ir.ui.view">
     <field name="model">product.product</field>
     <field name="inherit_id" ref="stock.product_form_view_procurement_button"/>
