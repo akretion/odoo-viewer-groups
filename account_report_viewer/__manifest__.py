@@ -5,7 +5,7 @@
 {
     'name': 'Account Report Viewer',
     'summary': """Access Report submenu to Viewers""",
-    'version': '12.0.1.0.0',
+    'version': '12.0.1.0.1',
     'category': 'Accounting',
     'license': 'AGPL-3',
     'description': """
@@ -22,6 +22,8 @@ This module has been written by Alexis de Lattre from Akretion
     'depends': ['account_viewer'],
     'data': [
         'views/account.xml',
+        'security/account_security.xml',
+        'security/ir.model.access.csv',
     ],
     'installable': True,
 }
