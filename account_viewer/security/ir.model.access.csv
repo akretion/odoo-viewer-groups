@@ -9,3 +9,4 @@ access_account_partial_reconcile_viewer,Read-only access to account.partial.reco
 access_account_journal_viewer,Read-only access to account.journal,account.model_account_journal,group_account_invoice_viewer,1,0,0,0
 access_account_invoice_report_viewer,Read-only access to account.invoice.report,account.model_account_invoice_report,group_account_invoice_viewer,1,0,0,0
 access_account_account_tag_viewer,Read-only access on account.account.tag,account.model_account_account_tag,group_account_invoice_viewer,1,0,0,0
+access_account_account_type_viewer,Read-only access on account.account.type,account.model_account_account_type,group_account_invoice_viewer,1,0,0,0
