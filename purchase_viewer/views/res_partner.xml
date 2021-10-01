@@ -12,6 +12,16 @@
     <field name="groups_id" eval="[(4, ref('purchase_viewer.group_purchase_viewer'))]"/>
 </record>
 
+<record id="res_partner_view_purchase_buttons" model="ir.ui.view">
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="purchase.res_partner_view_purchase_buttons" />
+    <field name="arch" type="xml">
+        <button name="%(purchase.act_res_partner_2_purchase_order)d" position="attributes">
+            <attribute name="groups">purchase.group_purchase_user,purchase_viewer.group_purchase_viewer</attribute>
+        </button>
+    </field>
+</record>
+
 <record id="purchase.purchase_partner_kanban_view" model="ir.ui.view">
     <field name="groups_id" eval="[(4, ref('purchase_viewer.group_purchase_viewer'))]"/>
 </record>

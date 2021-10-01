@@ -1,11 +1,11 @@
-# Copyright 2012-2019 Akretion (http://www.akretion.com)
+# Copyright 2012-2021 Akretion (http://www.akretion.com)
 # @author Alexis de Lattre <alexis.delattre@akretion.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
     'name': 'Sale Stock Viewer',
     'summary': """Extends the viewer groups to the 'sale_stock' module""",
-    'version': '12.0.1.0.0',
+    'version': '14.0.1.0.0',
     'category': 'Sales Management',
     'license': 'AGPL-3',
     'description': """

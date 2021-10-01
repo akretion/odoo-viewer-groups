@@ -4,15 +4,7 @@ access_stock_move_viewer,Read-only access to stock.move,stock.model_stock_move,g
 access_stock_production_lot_viewer,Read-only access to stock.production.lot,stock.model_stock_production_lot,group_stock_viewer,1,0,0,0
 access_stock_inventory_viewer,Read-only access to stock.inventory,stock.model_stock_inventory,group_stock_viewer,1,0,0,0
 access_stock_inventory_line_viewer,Read-only access to stock.inventory.line,stock.model_stock_inventory_line,group_stock_viewer,1,0,0,0
-access_report_stock_forecast_viewer,Read-only access to report.stock.forecast,stock.model_report_stock_forecast,group_stock_viewer,1,0,0,0
 access_stock_scrap_viewer,Read-only access to stock.scrap,stock.model_stock_scrap,group_stock_viewer,1,0,0,0
 access_stock_warehouse_orderpoint_viewer,Read-only access to stock.warehouse.orderpoint,stock.model_stock_warehouse_orderpoint,group_stock_viewer,1,0,0,0
-access_stock_quant_viewer,Read-only access to stock.quant,stock.model_stock_quant,group_stock_viewer,1,0,0,0
-access_stock_quant_package_viewer,Read-only access to stock.quant.package,stock.model_stock_quant_package,group_stock_viewer,1,0,0,0
-access_stock_package_level_viewer,Read-only access to stock.package.level,stock.model_stock_package_level,group_stock_viewer,1,0,0,0
-access_stock_rule_viewer,Read-only access to stock.rule,stock.model_stock_rule,group_stock_viewer,1,0,0,0
-access_stock_move_line_viewer,Read-only access to stock.move.line,stock.model_stock_move_line,group_stock_viewer,1,0,0,0
-access_stock_fixed_putaway_strat_viewer,Read-only access to stock.fixed.putaway.strat,stock.model_stock_fixed_putaway_strat,group_stock_viewer,1,0,0,0
 access_stock_barcode_nomenclature_viewer,Read-only access to barcode.nomenclature,barcodes.model_barcode_nomenclature,group_stock_viewer,1,0,0,0
 access_stock_barcode_rule_viewer,Read-only access to barcode.rule,barcodes.model_barcode_rule,group_stock_viewer,1,0,0,0
-access_product_price_history_viewer,Read-only access to product.price.history,product.model_product_price_history,group_stock_viewer,1,0,0,0
