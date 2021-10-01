@@ -19,7 +19,7 @@ This module has been written by Alexis de Lattre from Akretion
     """,
     'author': 'Akretion',
     'website': 'http://www.akretion.com',
-    'depends': ['sale_viewer'],
+    'depends': ['purchase_viewer'],
     'data': [
         'views/purchase.xml',
     ],
