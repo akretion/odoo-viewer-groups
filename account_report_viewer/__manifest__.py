@@ -25,5 +25,5 @@ This module has been written by Alexis de Lattre from Akretion
         'security/account_security.xml',
         'security/ir.model.access.csv',
     ],
-    'installable': True,
+    'installable': False,
 }
