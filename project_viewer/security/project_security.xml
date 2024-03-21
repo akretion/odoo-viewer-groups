@@ -10,7 +10,7 @@
 
 <record id="group_project_viewer" model="res.groups">
     <field name="name">Viewer</field>
-    <field name="category_id" ref="base.module_category_project_management"/>
+    <field name="category_id" ref="base.module_category_services_project"/>
 </record>
 
 <record id="project.group_project_user" model="res.groups">
