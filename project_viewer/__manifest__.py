@@ -5,7 +5,7 @@
 {
     'name': 'Project Viewer',
     'summary': """Adds a group 'Project Viewer'""",
-    'version': '14.0.1.0.0',
+    'version': '16.0.1.0.0',
     'category': 'Project Management',
     'license': 'AGPL-3',
     'description': """
@@ -23,6 +23,7 @@ This module has been written by Alexis de Lattre from Akretion <alexis.delattre@
         'security/project_security.xml',
         'security/ir.model.access.csv',
         'views/project.xml',
+        'views/res_partner.xml',
     ],
     'installable': True,
 }

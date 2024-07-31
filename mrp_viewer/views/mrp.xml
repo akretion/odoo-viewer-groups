@@ -12,12 +12,37 @@
     <field name="groups_id" eval="[(4, ref('group_mrp_viewer'))]"/>
 </record>
 
-<record id="mrp.product_template_form_view_bom_button" model="ir.ui.view">
-    <field name="groups_id" eval="[(4, ref('group_mrp_viewer'))]"/>
+<record id="product_template_form_view_bom_button" model="ir.ui.view">
+    <field name="model">product.template</field>
+    <field name="inherit_id" ref="mrp.product_template_form_view_bom_button"/>
+    <field name="arch" type="xml">
+        <!-- I can't inherit name="%(mrp.template_open_bom)d" because it is inherited by mrp_usability -->
+        <xpath expr="//field[@name='bom_count']/.." position="attributes">
+            <attribute name="groups" add="mrp_viewer.group_mrp_viewer" separator=","/>
+        </xpath>
+        <button name="action_used_in_bom" type="object" position="attributes">
+            <attribute name="groups" add="mrp_viewer.group_mrp_viewer" separator=","/>
+        </button>
+        <button name="action_view_mos" type="object" position="attributes">
+            <attribute name="groups" add="mrp_viewer.group_mrp_viewer" separator=","/>
+        </button>
+    </field>
 </record>
 
-<record id="mrp.product_product_form_view_bom_button" model="ir.ui.view">
-    <field name="groups_id" eval="[(4, ref('group_mrp_viewer'))]"/>
+<record id="product_product_form_view_bom_button" model="ir.ui.view">
+    <field name="model">product.product</field>
+    <field name="inherit_id" ref="mrp.product_product_form_view_bom_button"/>
+    <field name="arch" type="xml">
+        <button name="action_view_bom" type="object" position="attributes">
+            <attribute name="groups" add="mrp_viewer.group_mrp_viewer" separator=","/>
+        </button>
+        <button name="action_used_in_bom" type="object" position="attributes">
+            <attribute name="groups" add="mrp_viewer.group_mrp_viewer" separator=","/>
+        </button>
+        <button name="action_view_mos" type="object" position="attributes">
+            <attribute name="groups" add="mrp_viewer.group_mrp_viewer" separator=","/>
+        </button>
+    </field>
 </record>
 
 

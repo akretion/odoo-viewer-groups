@@ -1,7 +1,7 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_project_project_viewer,Read-only access to project.project,project.model_project_project,group_project_viewer,1,0,0,0
-access_project_task_type_viewer,Read-only access to project.task.type,project.model_project_task_type,group_project_viewer,1,0,0,0
-access_project_task_viewer,Read-only access to project.task,project.model_project_task,group_project_viewer,1,0,0,0
 access_resource_calendar_viewer,Read-only access to resource.calendar,resource.model_resource_calendar,group_project_viewer,1,0,0,0
 access_resource_calendar_leaves_viewer,Read-only access to resource.calendar.leaves,resource.model_resource_calendar_leaves,group_project_viewer,1,0,0,0
 access_resource_calendar_attendance_viewer,Read-only access to resource.calendar.attendance,resource.model_resource_calendar_attendance,group_project_viewer,1,0,0,0
+access_project_collaborator_viewer,Read-only access to project.collaborator,project.model_project_collaborator,group_project_viewer,1,0,0,0
+access_report_project_task_user_viewer,Read-only access to report.project.task.user,project.model_report_project_task_user,group_project_viewer,1,0,0,0
+access_project_task_burndown_chart_report_viewer,Read-only access to project.task.burndown.chart.report,project.model_project_task_burndown_chart_report,group_project_viewer,1,0,0,0

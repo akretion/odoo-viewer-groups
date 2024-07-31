@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2024 Akretion (http://www.akretion.com/)
+  @author Alexis de Lattre <alexis.delattre@akretion.com>
+  License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+
+<odoo>
+
+
+<record id="view_partners_form_crm1" model="ir.ui.view">
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="crm.view_partners_form_crm1"/>
+    <field name="arch" type="xml">
+        <button name="action_view_opportunity" type="object" position="attributes">
+            <attribute name="groups" add="sale_viewer.group_sale_viewer" separator=","/>
+        </button>
+    </field>
+</record>
+
+<record id="crm_lead_partner_kanban_view" model="ir.ui.view">
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="crm.crm_lead_partner_kanban_view"/>
+    <field name="arch" type="xml">
+        <field name="opportunity_count" position="attributes">
+            <attribute name="groups" add="sale_viewer.group_sale_viewer" separator=","/>
+        </field>
+        <a data-type="object" data-name="action_view_opportunity" position="attributes">
+            <attribute name="groups" add="sale_viewer.group_sale_viewer" separator=","/>
+        </a>
+    </field>
+</record>
+
+
+
+</odoo>

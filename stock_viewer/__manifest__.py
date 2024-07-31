@@ -5,7 +5,7 @@
 {
     'name': 'Stock Viewer',
     'summary': """Adds a group 'Stock viewer'""",
-    'version': '14.0.1.0.0',
+    'version': '16.0.1.0.0',
     'category': 'Warehouse',
     'license': 'AGPL-3',
     'description': """
@@ -17,7 +17,7 @@ This module adds a group *Stock viewer* in the *Warehouse* application. This gro
 This module has been written by Alexis de Lattre from Akretion <alexis.delattre@akretion.com>.
     """,
     'author': 'Akretion',
-    'website': 'http://www.akretion.com',
+    'website': 'https://github.com/akretion/odoo-viewer-groups',
     'depends': ['stock'],
     'data': [
         'security/stock_security.xml',

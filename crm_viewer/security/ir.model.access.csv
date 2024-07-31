@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_lead_viewer,Read-only access to crm.lead,crm.model_crm_lead,sale_viewer.group_sale_viewer,1,0,0,0
+access_crm_lead_scoring_frequency_viewer,Read-only access to crm.lead.scoring.frequency,crm.model_crm_lead_scoring_frequency,sale_viewer.group_sale_viewer,1,0,0,0
+access_crm_lead_scoring_frequency_field_viewer,Read-only access to crm.lead.scoring.frequency.field,crm.model_crm_lead_scoring_frequency_field,sale_viewer.group_sale_viewer,1,0,0,0
+access_crm_recurring_plan_viewer,Read-only access to crm.recurring.plan,crm.model_crm_recurring_plan,sale_viewer.group_sale_viewer,1,0,0,0

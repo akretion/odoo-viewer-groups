@@ -5,7 +5,7 @@
 {
     'name': 'Sale Viewer',
     'summary': """Adds a group 'Sale viewer'""",
-    'version': '14.0.1.0.0',
+    'version': '16.0.1.0.0',
     'category': 'Sales',
     'license': 'AGPL-3',
     'description': """
@@ -17,12 +17,13 @@ This module adds a group *Sale viewer* in the *Sales* application. This group gr
 This module has been written by Alexis de Lattre from Akretion <alexis.delattre@akretion.com>.
     """,
     'author': 'Akretion',
-    'website': 'http://www.akretion.com',
+    'website': 'https://github.com/akretion/odoo-viewer-groups',
     'depends': ['sale'],
     'data': [
         'security/sale_security.xml',
         'security/ir.model.access.csv',
         'views/sale.xml',
+        'views/product.xml',
         'views/res_partner.xml',
     ],
     'installable': True,

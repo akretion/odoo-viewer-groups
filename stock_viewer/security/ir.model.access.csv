@@ -1,10 +1,10 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_stock_picking_viewer,Read-only access to stock.picking,stock.model_stock_picking,group_stock_viewer,1,0,0,0
 access_stock_move_viewer,Read-only access to stock.move,stock.model_stock_move,group_stock_viewer,1,0,0,0
-access_stock_production_lot_viewer,Read-only access to stock.production.lot,stock.model_stock_production_lot,group_stock_viewer,1,0,0,0
-access_stock_inventory_viewer,Read-only access to stock.inventory,stock.model_stock_inventory,group_stock_viewer,1,0,0,0
-access_stock_inventory_line_viewer,Read-only access to stock.inventory.line,stock.model_stock_inventory_line,group_stock_viewer,1,0,0,0
+access_stock_production_lot_viewer,Read-only access to stock.lot,stock.model_stock_lot,group_stock_viewer,1,0,0,0
 access_stock_scrap_viewer,Read-only access to stock.scrap,stock.model_stock_scrap,group_stock_viewer,1,0,0,0
 access_stock_warehouse_orderpoint_viewer,Read-only access to stock.warehouse.orderpoint,stock.model_stock_warehouse_orderpoint,group_stock_viewer,1,0,0,0
 access_stock_barcode_nomenclature_viewer,Read-only access to barcode.nomenclature,barcodes.model_barcode_nomenclature,group_stock_viewer,1,0,0,0
 access_stock_barcode_rule_viewer,Read-only access to barcode.rule,barcodes.model_barcode_rule,group_stock_viewer,1,0,0,0
+access_stock_traceability_report_viewer,Read-only access to stock.traceability.report,stock.model_stock_traceability_report,group_stock_viewer,1,0,0,0
+access_stock_package_type_viewer,Read-only access to stock.package.type,stock.model_stock_package_type,group_stock_viewer,1,0,0,0

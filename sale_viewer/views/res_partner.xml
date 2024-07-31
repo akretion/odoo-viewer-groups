@@ -8,22 +8,30 @@
 <odoo>
 
 
-<record id="sale.res_partner_view_buttons" model="ir.ui.view">
-    <field name="groups_id" eval="[(4, ref('sale_viewer.group_sale_viewer'))]"/>
-</record>
-
 <record id="res_partner_view_buttons" model="ir.ui.view">
     <field name="model">res.partner</field>
     <field name="inherit_id" ref="sale.res_partner_view_buttons"/>
     <field name="arch" type="xml">
         <button name="action_view_sale_order" type="object" position="attributes">
-            <attribute name="groups">sales_team.group_sale_salesman,sale_viewer.group_sale_viewer</attribute>
+            <attribute name="groups" add="sale_viewer.group_sale_viewer" separator=","/>
         </button>
+        <xpath expr="//field[@name='sale_warn']/../.." position="attributes">
+            <attribute name="groups" add="sale_viewer.group_sale_viewer" separator=","/>
+        </xpath>
     </field>
 </record>
 
-<record id="sale.crm_lead_partner_kanban_view" model="ir.ui.view">
-    <field name="groups_id" eval="[(4, ref('sale_viewer.group_sale_viewer'))]"/>
+<record id="crm_lead_partner_kanban_view" model="ir.ui.view">
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="sale.crm_lead_partner_kanban_view"/>
+    <field name="arch" type="xml">
+        <field name="sale_order_count" position="attributes">
+            <attribute name="groups" add="sale_viewer.group_sale_viewer" separator=","/>
+        </field>
+        <a data-type="object" data-name="action_view_sale_order" position="attributes">
+            <attribute name="groups" add="sale_viewer.group_sale_viewer" separator=","/>
+        </a>
+    </field>
 </record>
 
 

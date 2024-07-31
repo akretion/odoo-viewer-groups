@@ -8,7 +8,7 @@
 <odoo>
 
 <record id="stock.menu_warehouse_report" model="ir.ui.menu">
-    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="groups_id" eval="[(4, ref('stock_viewer.group_stock_viewer'))]"/>
 </record>
 
 </odoo>

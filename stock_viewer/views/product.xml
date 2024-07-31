@@ -13,13 +13,9 @@
     <field name="inherit_id" ref="stock.view_template_property_form"/>
     <field name="arch" type="xml">
         <page name="inventory" position="attributes">
-            <attribute name="groups">stock.group_stock_user,product.group_stock_packaging,stock_viewer.group_stock_viewer</attribute>
+            <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
         </page>
     </field>
-</record>
-
-<record id="stock.product_form_view_procurement_button" model="ir.ui.view">
-    <field name="groups_id" eval="[(4, ref('group_stock_viewer'))]"/>
 </record>
 
 <record id="product_form_view_procurement_button" model="ir.ui.view">
@@ -27,24 +23,70 @@
     <field name="inherit_id" ref="stock.product_form_view_procurement_button"/>
     <field name="arch" type="xml">
         <button name="action_view_stock_move_lines" type="object" position="attributes">
-            <attribute name="groups">stock.group_stock_user,stock_viewer.group_stock_viewer</attribute>
+            <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
         </button>
     </field>
-</record>
-
-<record id="stock.product_template_form_view_procurement_button" model="ir.ui.view">
-    <field name="groups_id" eval="[(4, ref('group_stock_viewer'))]"/>
 </record>
 
 <record id="product_template_form_view_procurement_button" model="ir.ui.view">
     <field name="model">product.template</field>
     <field name="inherit_id" ref="stock.product_template_form_view_procurement_button"/>
     <field name="arch" type="xml">
+        <xpath expr="//div[@name='button_box']/t" position="attributes">
+            <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+        </xpath>
         <button name="action_view_stock_move_lines" type="object" position="attributes">
-            <attribute name="groups">stock.group_stock_user,stock_viewer.group_stock_viewer</attribute>
+            <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
         </button>
+        <field name="responsible_id" position="attributes">
+            <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+        </field>
     </field>
 </record>
 
+<record id="view_stock_product_tree" model="ir.ui.view">
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="stock.view_stock_product_tree"/>
+        <field name="arch" type="xml">
+            <field name="qty_available" position="attributes">
+                <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+            </field>
+            <field name="virtual_available" position="attributes">
+                <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+            </field>
+        </field>
+</record>
+
+<record id="view_stock_product_template_tree" model="ir.ui.view">
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="stock.view_stock_product_template_tree"/>
+        <field name="arch" type="xml">
+            <field name="show_on_hand_qty_status_button" position="attributes">
+                <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+            </field>
+            <field name="qty_available" position="attributes">
+                <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+            </field>
+            <field name="virtual_available" position="attributes">
+                <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+            </field>
+            <field name="responsible_id" position="attributes">
+                <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+            </field>
+        </field>
+</record>
+
+<record id="product_template_kanban_stock_view" model="ir.ui.view">
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="stock.product_template_kanban_stock_view"/>
+        <field name="arch" type="xml">
+            <field name="show_on_hand_qty_status_button" position="attributes">
+                <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+            </field>
+            <xpath expr="//t[@groups='stock.group_stock_user']" position="attributes">
+                <attribute name="groups" add="stock_viewer.group_stock_viewer" separator=","/>
+            </xpath>
+        </field>
+</record>
 
 </odoo>

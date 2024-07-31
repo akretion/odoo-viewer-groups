@@ -1,3 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_mrp_bom_viewer,Read-only access to mrp.bom,mrp.model_mrp_bom,sale_viewer.group_sale_viewer,1,0,0,0
 access_mrp_bom_line_viewer,Read-only access to mrp.bom.line,mrp.model_mrp_bom_line,sale_viewer.group_sale_viewer,1,0,0,0
+access_mrp_production_viewer,Read-only access to mrp.production,mrp.model_mrp_production,sale_viewer.group_sale_viewer,1,0,0,0
+access_mrp_workorder_viewer,Read-only access to mrp.workorder,mrp.model_mrp_workorder,sale_viewer.group_sale_viewer,1,0,0,0

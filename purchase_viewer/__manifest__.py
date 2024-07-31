@@ -5,7 +5,7 @@
 {
     'name': 'Purchase Viewer',
     'summary': """Adds a group 'Purchase viewer'""",
-    'version': '14.0.1.0.0',
+    'version': '16.0.1.0.0',
     'category': 'Purchases',
     'license': 'AGPL-3',
     'description': """
@@ -17,7 +17,7 @@ This module adds a group *Purchase viewer* in the *Purchases* application. This 
 This module has been written by Alexis de Lattre from Akretion <alexis.delattre@akretion.com>.
     """,
     'author': 'Akretion',
-    'website': 'http://www.akretion.com',
+    'website': 'https://github.com/akretion/odoo-viewer-groups',
     'depends': ['purchase'],
     'data': [
         'security/purchase_security.xml',

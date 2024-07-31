@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright 2013-2019 Akretion (http://www.akretion.com)
+  Copyright 2013-2024 Akretion (http://www.akretion.com)
   @author Alexis de Lattre <alexis.delattre@akretion.com>
   License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 -->
@@ -17,9 +17,54 @@
     <field name="groups_id" eval="[(4, ref('group_project_viewer'))]"/>
 </record>
 
-<record id="project.view_task_partner_info_form" model="ir.ui.view">
-    <field name="groups_id" eval="[(4, ref('group_project_viewer'))]"/>
+
+<record id="edit_project" model="ir.ui.view">
+    <field name="model">project.project</field>
+    <field name="inherit_id" ref="project.edit_project"/>
+    <field name="arch" type="xml">
+        <button name="project_update_all_action" type="object" position="attributes">
+            <attribute name="groups" add="project_viewer.group_project_viewer" separator=","/>
+        </button>
+    </field>
 </record>
 
+<record id="view_project_kanban" model="ir.ui.view">
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('o_kanban_manage_reporting')]/div[hasclass('o_kanban_card_manage_title')]" position="attributes">
+                <attribute name="groups" add="project_viewer.group_project_viewer" separator=","/>
+            </xpath>
+            <xpath expr="//a[@name='action_view_tasks_analysis']/.." position="attributes">
+                <attribute name="groups" add="project_viewer.group_project_viewer" separator=","/>
+            </xpath>
+            <xpath expr="//a[@name='action_project_task_burndown_chart_report']/.." position="attributes">
+                <attribute name="groups" add="project_viewer.group_project_viewer" separator=","/>
+            </xpath>
+        </field>
+</record>
+
+<record id="project_view_kanban_inherit_project" model="ir.ui.view">
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.project_view_kanban_inherit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//a[@name='project_update_all_action']/.." position="attributes">
+                <attribute name="groups" add="project_viewer.group_project_viewer" separator=","/>
+            </xpath>
+        </field>
+</record>
+
+<record id="view_task_form2" model="ir.ui.view">
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <widget name="week_days" position="attributes">
+                <attribute name="groups" add="project_viewer.group_project_viewer" separator=","/>
+        </widget>
+        <xpath expr="//field[@name='recurrence_message']/../.." position="attributes">
+            <attribute name="groups" add="project_viewer.group_project_viewer" separator=","/>
+        </xpath>
+    </field>
+</record>
 
 </odoo>

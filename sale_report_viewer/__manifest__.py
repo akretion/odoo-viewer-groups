@@ -5,7 +5,7 @@
 {
     'name': 'Sale Report Viewer',
     'summary': """Access Report submenu to Users and viewers""",
-    'version': '14.0.1.0.0',
+    'version': '16.0.1.0.0',
     'category': 'Sales',
     'license': 'AGPL-3',
     'description': """
@@ -18,7 +18,7 @@ This module has been written by Alexis de Lattre from Akretion
 <alexis.delattre@akretion.com>.
     """,
     'author': 'Akretion',
-    'website': 'http://www.akretion.com',
+    'website': 'https://github.com/akretion/odoo-viewer-groups',
     'depends': ['sale_viewer'],
     'data': [
         'views/sale.xml',
